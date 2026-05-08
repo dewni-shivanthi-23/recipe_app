@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.25s ease-out forwards;
+}
